@@ -1,6 +1,7 @@
 import Container from 'react-bootstrap/Container'
 import Navbar from 'react-bootstrap/Navbar'
 import Nav from 'react-bootstrap/Nav'
+import styles from './index.module.scss'
 
 export default function Navigation(): JSX.Element {
   const headerItems = [
@@ -14,7 +15,9 @@ export default function Navigation(): JSX.Element {
   return (
     <>
       <Navbar
-        bg="dark"
+        className={
+          styles.navBar
+        }
         variant="dark"
       >
         <Container>
