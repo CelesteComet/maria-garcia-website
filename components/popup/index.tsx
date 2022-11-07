@@ -52,18 +52,17 @@ export default function Popup(): JSX.Element {
     ) => {
       e.preventDefault()
       setInputText(
-        e.target.value
+        (e.target as any)
+          .value
       )
     }
 
   const saveEmailToBackend =
-    (
-      e: React.FormEvent<HTMLInputElement>
-    ) => {
+    (e: any) => {
       e.preventDefault()
       console.log(
-        e.target.email
-          .value
+        (e.target as any)
+          .email.value
       )
       setIsThankYou(true)
     }
