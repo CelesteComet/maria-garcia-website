@@ -1,3 +1,13 @@
 .navBar {
     background: black;
+    
+    img {
+        width: 75px;
+        height: 75px;
+        
+        @media (min-width: 768px) {
+        width: 150px;
+        height: 150px;            
+        }
+    }
 }

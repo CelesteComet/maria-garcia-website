@@ -1,8 +1,3 @@
-import Container from 'react-bootstrap/Container'
-import Navbar from 'react-bootstrap/Navbar'
-import Nav from 'react-bootstrap/Nav'
-import styles from './index.module.scss'
-
 export default function Navigation(): JSX.Element {
   const headerItems = [
     'communities',
@@ -14,40 +9,36 @@ export default function Navigation(): JSX.Element {
   ]
   return (
     <>
-      <Navbar
-        className={
-          styles.navBar
-        }
-        variant="dark"
-      >
-        <Container>
-          <Navbar.Brand href="#home">
-            <img
-              src="/logo.png"
-              width="150"
-              height="150"
-              alt="React Bootstrap logo"
-            />
-          </Navbar.Brand>
-          <Nav>
+      <nav className="bg-black">
+        <div className="flex flex-col md:flex-row items-center justify-between p-8 bg-black text-white mx-auto">
+          <img
+            className="w-28"
+            src="/logo.png"
+            alt="Alice Wu Logo"
+          />
+          <ul className="flex flex-col md:flex-row">
             {headerItems.map(
               (
                 headerItem
               ) => {
                 return (
-                  <Nav.Link
+                  <a
+                    key={
+                      headerItem
+                    }
+                    className="p-4"
                     href={`/${headerItem}`}
                   >
                     {
                       headerItem
                     }
-                  </Nav.Link>
+                  </a>
                 )
               }
             )}
-          </Nav>
-        </Container>
-      </Navbar>
+          </ul>
+        </div>
+      </nav>
     </>
   )
 }

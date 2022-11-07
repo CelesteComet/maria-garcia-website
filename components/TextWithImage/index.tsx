@@ -1,51 +1,33 @@
-import Container from 'react-bootstrap/Container'
-import Row from 'react-bootstrap/Row'
-import Col from 'react-bootstrap/Col'
-import Image from 'react-bootstrap/Image'
-
-import styles from './index.module.scss'
-
 export interface TextWithImageProps {
   title?: string
-  text: string
   image: string
   alt: string
+  children: JSX.Element
 }
 
 export default function TextWithImage({
   title,
-  text,
   image,
   alt,
+  children,
 }: TextWithImageProps): JSX.Element {
   return (
-    <Container
-      className={
-        styles.textWithImage
-      }
-    >
-      <Row>
-        <Col
-          xs={12}
-          md={6}
-        >
-          {title && (
-            <h2>
-              {title}
-            </h2>
-          )}
-          <p>{text}</p>
-        </Col>
-        <Col
-          xs={12}
-          md={6}
-        >
-          <Image
-            src={image}
-            alt="Alice Wu"
-          />
-        </Col>
-      </Row>
-    </Container>
+    <div className="container flex-col md:flex-row flex p-8 mx-auto">
+      <div className="w-full md:w-1/2 mr-8">
+        {title && (
+          <h2 className="text-3xl mb-8">
+            {title}
+          </h2>
+        )}
+        {children}
+      </div>
+      <div className="w-full md:w-1/2">
+        <img
+          className="w-1/2 mx-auto md:w-full"
+          src={image}
+          alt={alt}
+        />
+      </div>
+    </div>
   )
 }
