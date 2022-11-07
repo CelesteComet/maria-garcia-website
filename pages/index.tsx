@@ -2,13 +2,18 @@ import Navigation from '../components/navigation'
 import TextWithImage from '../components/TextWithImage'
 import Hero from '../components/hero'
 import Footer from '../components/footer'
+import Modal from 'react-modal'
+import React from 'react'
+import Popup from '../components/popup'
 
 export default function IndexPage() {
   const paragraphClass =
     'mb-4'
+
   return (
     <main>
       <Navigation />
+      <Popup />
       <Hero
         backgroundImage="/hero.jpg"
         button={{
