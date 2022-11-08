@@ -18,7 +18,7 @@ export default function Navigation(): JSX.Element {
     bmBurgerBars: {
       background:
         'black',
-      height: '10%',
+      height: '2px',
       border:
         '2px solid white',
     },
