@@ -1,6 +1,6 @@
 import { slide as Menu } from 'react-burger-menu'
-import { useState } from 'react'
 import { Oxygen } from '@next/font/google'
+import Image from 'next/image'
 
 const oxy = Oxygen({
   weight: '400',
@@ -103,7 +103,9 @@ export default function Navigation(): JSX.Element {
       </div>
       <nav className="bg-black md:flex">
         <div className="flex flex-col hidden md:flex md:flex-row items-center justify-between p-8 bg-black text-white w-full">
-          <img
+          <Image
+            width="112"
+            height="112"
             className="w-28"
             src="/logo.png"
             alt="Alice Wu Logo"

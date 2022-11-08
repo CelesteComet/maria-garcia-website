@@ -1,3 +1,4 @@
+import Image from 'next/image'
 export interface TextWithImageProps {
   title?: string
   image: string
@@ -22,7 +23,11 @@ export default function TextWithImage({
         {children}
       </div>
       <div className="w-full md:w-1/2">
-        <img
+        <Image
+          width={286 * 2}
+          height={
+            325 * 2
+          }
           className="w-1/2 pb-8 md:pb-0 md:w-full"
           src={image}
           alt={alt}

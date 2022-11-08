@@ -1,5 +1,6 @@
 import Modal from 'react-modal'
 import { useState } from 'react'
+import Image from 'next/image'
 
 export default function Popup(): JSX.Element {
   const customStyles = {
@@ -104,8 +105,10 @@ export default function Popup(): JSX.Element {
             />
           </svg>
         </button>
-        <img
-          className="w-28 bg-black mx-auto"
+        <Image
+          width="112"
+          height="112"
+          className="mx-auto"
           src="/logo.png"
           alt="Alice Wu Logo"
         />
