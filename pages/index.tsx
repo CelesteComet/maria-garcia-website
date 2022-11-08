@@ -2,13 +2,15 @@ import Navigation from '../components/navigation'
 import TextWithImage from '../components/TextWithImage'
 import Hero from '../components/hero'
 import Footer from '../components/footer'
-import Modal from 'react-modal'
 import React from 'react'
 import Popup from '../components/popup'
 
 export default function IndexPage() {
   const paragraphClass =
     'mb-4'
+
+  const buttonClass =
+    'border-black border min-w-[150px] text-center text-black p-2 hover:bg-black hover:text-white transition-colors duration-300 mr-2'
 
   return (
     <main>
@@ -21,7 +23,7 @@ export default function IndexPage() {
           link: 'https://calendly.com/alicerealtor',
         }}
       />
-      <section className="bg-black text-white flex items-center justify-center h-48">
+      <section className="bg-[#f4f4f4] text-black flex items-center justify-center h-48">
         <div className="flex flex-col items-center">
           <h2 className="text-3xl">
             I am looking
@@ -29,13 +31,17 @@ export default function IndexPage() {
           </h2>
           <div className="flex items-center mt-4">
             <a
-              className="border-white border-2 text-white p-2 hover:bg-white hover:text-black transition-colors duration-300 mr-2"
+              className={
+                buttonClass
+              }
               href="/list"
             >
               List a Home
             </a>
             <a
-              className="border-white border-2 text-white p-2 hover:bg-white hover:text-black transition-colors duration-300 ml-2"
+              className={
+                buttonClass
+              }
               href="/buy"
             >
               Buy a Home

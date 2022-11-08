@@ -12,7 +12,7 @@ export default function TextWithImage({
   children,
 }: TextWithImageProps): JSX.Element {
   return (
-    <div className="container flex-col md:flex-row flex p-8 mx-auto">
+    <div className="container flex-col-reverse md:flex-row flex p-8 mx-auto">
       <div className="w-full md:w-1/2 mr-8">
         {title && (
           <h2 className="text-3xl mb-8">
@@ -23,7 +23,7 @@ export default function TextWithImage({
       </div>
       <div className="w-full md:w-1/2">
         <img
-          className="w-1/2 mx-auto md:w-full"
+          className="w-1/2 pb-8 md:pb-0 md:w-full"
           src={image}
           alt={alt}
         />

@@ -21,7 +21,7 @@ export default function Hero({
         }}
       >
         <a
-          className="border-white border-2 text-white p-2 hover:bg-black transition-colors duration-300"
+          className="border-white border min-w-[150px] text-center text-white p-2 hover:bg-black transition-colors duration-300"
           href={
             button.link
           }
