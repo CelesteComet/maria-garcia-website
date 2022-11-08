@@ -28,7 +28,7 @@ export default function TextWithImage({
           height={
             325 * 2
           }
-          className="w-1/2 pb-8 md:pb-0 md:w-full"
+          className="w-full pb-8 md:pb-0 md:w-full"
           src={image}
           alt={alt}
         />

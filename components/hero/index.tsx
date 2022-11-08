@@ -31,7 +31,7 @@ export default function Hero({
       </div>
       <div className="bg-black h-48 flex items-center justify-center">
         <div className="container columns-2 h-3/4 flex justify-center items-center">
-          <div className="bg-black border-r-2 border-white flex flex-col text-white text-center justify-center h-full w-1/2">
+          <div className="bg-black p-4 border-r-2 border-white flex flex-col text-white text-center justify-center h-full w-1/2">
             <h2 className="text-3xl">
               Alice Wu
             </h2>
@@ -41,7 +41,7 @@ export default function Hero({
               Realtor
             </p>
           </div>
-          <div className="bg-black border-l-2 border-white flex flex-col text-white text-center justify-center items-center h-full w-1/2">
+          <div className="bg-black p-4 border-l-2 border-white flex flex-col text-white text-center justify-center items-center h-full w-1/2">
             <img
               className="w-48"
               src="/compass.png"
