@@ -20,7 +20,7 @@ export default function Newsletter(): JSX.Element {
       </p>
       <form
         action="https://gmail.us17.list-manage.com/subscribe/post" method="POST"
-        className="flex flex-col lg:flex-row justify-center items-end"
+        className="flex flex-col lg:flex-row justify-center items-center md:items-end"
       >
         <fieldset className='flex flex-col lg:flex-row mb-4 lg:mb-0'>
           <input type="hidden" name="u" value="449d52c33ea813b64ddb5f24f" />
@@ -37,7 +37,7 @@ export default function Newsletter(): JSX.Element {
           <div className='flex flex-col'>
             <label htmlFor="b_email">Email</label>
             <input
-              className="border border-black p-1 px-4 text-center rounded-md mr-4 min-w-[500px]"
+              className="border border-black p-1 px-4 text-center rounded-md mr-4"
               type="text"
               name="b_email"
               id="b_email"
