@@ -97,7 +97,7 @@ export default function Navigation(): JSX.Element {
     <>
       <div className="md:hidden">
         <Menu
-          className="md:hidden"
+          className="md:hidden mb-8"
           right
           styles={styles}
         >
@@ -106,7 +106,7 @@ export default function Navigation(): JSX.Element {
           </ul>
         </Menu>
       </div>
-      <nav className="bg-black md:flex">
+      <nav className="bg-transparent md:flex">
         <div className="flex flex-col hidden md:flex md:flex-row items-center justify-between p-8 bg-black text-white w-full">
           <a href="/">
             <Image

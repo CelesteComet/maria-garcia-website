@@ -42,10 +42,11 @@ export default function Buying() {
     "More than 100 other home improvement services"
   ];
 
+
   return (
-    <div className="">
+    <div>
       <div className='flex flex-col lg:flex-row p-8 justify-between align-end text-2xl container mx-auto'>
-        <Image width="448" height="126" className='max-w-md mb-4 md:mr-8 lg:mb-0' src='/compass-concierge.png' alt='Compass Concierge' />
+        <Image width="300" height="80" className='max-w-md mb-4 md:mr-8 lg:mb-0' src='/compass-concierge.png' alt='Compass Concierge' />
         <p className='flex items-end'>
           Get fronted for
           the cost of
