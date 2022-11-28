@@ -4,7 +4,7 @@ export default function Footer(): JSX.Element {
   const footerSocialIconClass =
     'flex justify-center items-center w-16 h-16'
   return (
-    <footer className="bg-black text-white justify-center text-center pt-4 pb-4">
+    <footer id="footer" className="bg-black text-white justify-center text-center pt-4 pb-4">
       <h3 className="text-3xl text-center">
         Let's Connect!
       </h3>

@@ -81,6 +81,7 @@ export default function Navigation(): JSX.Element {
               (
                 headerItem
               ) => {
+                const link = headerItem === 'contact' ? '#footer' : headerItem;
                 return (
                   <a
                     key={
@@ -89,7 +90,7 @@ export default function Navigation(): JSX.Element {
                     className={
                       navTextStyle
                     }
-                    href={`/${headerItem}`}
+                    href={`/${link}`}
                   >
                     {
                       headerItem
@@ -104,19 +105,20 @@ export default function Navigation(): JSX.Element {
       <nav className="bg-black md:flex">
         <div className="flex flex-col hidden md:flex md:flex-row items-center justify-between p-8 bg-black text-white w-full">
           <a href="/">
-          <Image
-            width="112"
-            height="112"
-            className="w-28"
-            src="/logo.png"
-            alt="Alice Wu Logo"
-          />
+            <Image
+              width="112"
+              height="112"
+              className="w-28"
+              src="/logo.png"
+              alt="Alice Wu Logo"
+            />
           </a>
           <ul className="flex flex-col md:block md:flex-row">
             {headerItems.map(
               (
                 headerItem
               ) => {
+                const link = headerItem === 'contact' ? '#footer' : headerItem;
                 return (
                   <a
                     key={
@@ -125,7 +127,7 @@ export default function Navigation(): JSX.Element {
                     className={
                       navTextStyle
                     }
-                    href={`/${headerItem}`}
+                    href={`/${link}`}
                   >
                     {
                       headerItem

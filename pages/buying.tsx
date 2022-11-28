@@ -1,3 +1,5 @@
+import Consultation from '../components/consultation'
+import Newsletter from '../components/Newsletter'
 import PageTitle from '../components/PageTitle'
 export default function Buying() {
   const content = [
@@ -57,9 +59,9 @@ export default function Buying() {
     },
   ]
   return (
-    <div className="container mx-auto">
+    <div className="mx-auto">
       <PageTitle text="The Home Buying Process" />
-      <div className="text-center">
+      <div className="text-center max-w-2xl mx-auto pb-4 pt-4 p-8">
         {content.map(
           (c, i) => {
             const stepNumber =
@@ -71,13 +73,15 @@ export default function Buying() {
                 }
               >
                 <h3 className="pb-1">
-                  {
-                    stepNumber
-                  }
-                  -
-                  {
-                    c.title
-                  }
+                  <b>
+                    {
+                      stepNumber
+                    }
+                    -
+                    {
+                      c.title
+                    }
+                  </b>
                 </h3>
                 <p className="pb-5">
                   {
@@ -89,6 +93,14 @@ export default function Buying() {
           }
         )}
       </div>
+      <div className='bg-black text-white items-center justify-center flex p-8'>
+        <div className='container flex flex-col md:flex-row justify-center items-center max-w-2xl'>
+          <img src="/white-living-room.jpg" className='p-4 w-128 md:w-96' alt='living room' />
+          <p>Finding a dream home can be daunting. Having moved recently herself, she will thoroughly guide you every step of the way into your new home hassle-free.</p>
+        </div>
+      </div>
+      <Consultation />
+      <Newsletter />
     </div>
   )
 }

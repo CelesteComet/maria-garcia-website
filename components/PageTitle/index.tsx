@@ -4,7 +4,7 @@ export default function PageTitle({
   text: string
 }) {
   return (
-    <div className="text-4xl text-center align-middle p-4">
+    <div className="bg-[#f4f4f4] flex justify-center items-center text-4xl h-48">
       {text}
     </div>
   )
