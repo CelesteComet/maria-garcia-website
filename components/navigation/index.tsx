@@ -20,7 +20,7 @@ export default function Navigation(): JSX.Element {
         'black',
       height: '2px',
       border:
-        '2px solid white',
+        '2px solid black',
     },
     bmBurgerBarsHover: {
       background:
