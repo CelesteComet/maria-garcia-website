@@ -60,7 +60,7 @@ export default function Popup(): JSX.Element {
 
   const saveEmailToBackend =
     (e: any) => {
-      e.preventDefault()
+      // e.preventDefault()
       console.log(
         (e.target as any)
           .email.value
@@ -141,6 +141,7 @@ export default function Popup(): JSX.Element {
               More!
             </p>
             <form
+              action="https://gmail.us17.list-manage.com/subscribe/post?u=449d52c33ea813b64ddb5f24f&amp;id=562c9df0d0&amp;f_id=00ca65e0f0"
               className="flex flex-row"
               onSubmit={
                 saveEmailToBackend
@@ -157,7 +158,7 @@ export default function Popup(): JSX.Element {
                   className="border-2 border-white p-1 px-4 text-center  rounded-md mr-4"
                   type="text"
                   name="email"
-                  id="email"
+                  id="mce-EMAIL"
                   value={
                     inputText
                   }
@@ -168,7 +169,7 @@ export default function Popup(): JSX.Element {
                 />
               </fieldset>
               <button
-                className="border-white border-2 p-1 px-4  rounded-md text-white hover:text-black hover:bg-white transition-colors duration-300"
+                className="border-white border-2 p-1 px-4 rounded-md text-white hover:text-black hover:bg-white transition-colors duration-300"
                 type="submit"
               >
                 Submit

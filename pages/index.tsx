@@ -1,4 +1,3 @@
-import Navigation from '../components/navigation'
 import TextWithImage from '../components/TextWithImage'
 import Hero from '../components/hero'
 import Footer from '../components/footer'
@@ -14,8 +13,7 @@ export default function IndexPage() {
 
   return (
     <main>
-      <Navigation />
-      <Popup />
+      {/* <Popup /> */}
       <Hero
         backgroundImage="/hero.jpg"
         button={{

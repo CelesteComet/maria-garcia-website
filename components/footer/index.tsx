@@ -4,119 +4,120 @@ export default function Footer(): JSX.Element {
   const footerSocialIconClass =
     'flex justify-center items-center w-16 h-16'
   return (
-    <footer className="bg-black text-white justify-center text-center md:text-left pt-4 pb-4">
+    <footer className="bg-black text-white justify-center text-center pt-4 pb-4">
       <h3 className="text-3xl text-center">
-        Get in Touch
+        Let's Connect!
       </h3>
-      <div className="grid grid-cols-1 md:grid-cols-4 2xl:grid-cols-5 md:pt-4 container justify-center mx-auto">
-        <div
+      <div
+        className={
+          footerItemClass +
+          ' flex justify-center sm:justify-left'
+        }
+      >
+        <a
           className={
-            footerItemClass
+            footerSocialIconClass
           }
+          href="#"
         >
-          <div className="text-bold">
-            <span className="font-bold">
-              Main Office
-            </span>
-          </div>
-          <div>
-            <span>
-              900 Main
-              Street
-              <br />
-              Pleasanton,
-              CA
-              <br />
-              94566
-            </span>
-          </div>
-        </div>
-        <div
+          <img
+            className="w-full h-full"
+            src="/youtube.png"
+            alt="youtube"
+          />
+        </a>
+        <a
           className={
-            footerItemClass
+            footerSocialIconClass
           }
+          href="https://www.instagram.com/alicewurealtor"
         >
-          <div className="text-bold">
-            <span className="font-bold">
-              Livermore
-              Office
-            </span>
-          </div>
-          <div>
-            <span>
-              144 South K
-              Street
-              <br />
-              Livermore,
-              CA
-              <br />
-              94550
-            </span>
-          </div>
-        </div>
-        <div
-          className={
-            footerItemClass
-          }
-        >
-          <b>Tel</b>:
-          (669)-265-5083
-          <br />
+          <img
+            className="w-full h-full"
+            src="/instagram.png"
+            alt="instagram"
+          />
+        </a>
+      </div>
+      <div className="grid grid-cols-1 md:pt-4 container justify-center mx-auto">
+        <div className="pb-4">
+          <b>Tel</b>
+          :&nbsp;(669)-265-5083&nbsp;
           <b>Email</b>
-          :
+          :&nbsp;
           alicewu@compass.com
-          <br />
-          <b>Social</b>:
-          @alicewurealtor
         </div>
-        <div
-          className={
-            footerItemClass
-          }
-        >
-          <b>
-            Compass DRE
-          </b>
-          # 01527235
-          <br />
-          <b>DRE </b>
-          #02194535
-          <br />
+        <div>
+          South Bay |
+          Tri-Valley |
+          East Bay |
+          Peninsula |
+          California Bay
+          Area{' '}
+        </div>
+        <div className="pb-4">
+          900 Main
+          Street,
+          Pleasanton, CA
+          94566 / 144
+          South K Street,
+          Livermore, CA
+          94550
+        </div>
+        <div className="pb-4">
+          Compass DRE
+          #01527235 | DRE
+          #02194535 |
           Licenced as
           Kang-Ling Wu
-          <br />
           (Alice Wu)
         </div>
-        <div
-          className={
-            footerItemClass +
-            ' flex justify-center sm:justify-left'
-          }
-        >
-          <a
-            className={
-              footerSocialIconClass
-            }
-            href="#"
-          >
-            <img
-              className="w-full h-full"
-              src="/youtube.png"
-              alt="youtube"
-            />
-          </a>
-          <a
-            className={
-              footerSocialIconClass
-            }
-            href="https://www.instagram.com/alicewurealtor"
-          >
-            <img
-              className="w-full h-full"
-              src="/instagram.png"
-              alt="instagram"
-            />
-          </a>
+        <div className="text-sm">
+          Copyright ©
+          2022 Alice Wu
+          Realtor.
+        </div>
+        <div className="text-xs">
+          {' '}
+          All Rights
+          Reserved.
+          Compass is a
+          real estate
+          broker licensed
+          by the State of
+          California and
+          abides by Equal
+          Housing
+          Opportunity
+          laws. License
+          Number
+          01052285. All
+          material
+          presented
+          herein is
+          intended for
+          informational
+          purposes only
+          and is compiled
+          from sources
+          deemed reliable
+          but has not
+          been verified.
+          Changes in
+          price,
+          condition, sale
+          or withdrawal
+          may be made
+          without notice.
+          No statement is
+          made as to
+          accuracy of any
+          description.
+          All
+          measurements
+          and square
+          footage are
+          approximate.{' '}
         </div>
       </div>
     </footer>

@@ -14,3 +14,8 @@
       sans-serif;
   }
 }
+
+/* listing iframe */
+.publicCollection-header {
+  display: none;
+}
