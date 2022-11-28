@@ -97,7 +97,7 @@ export default function Buying() {
       </div>
       <div className='bg-black text-white items-center justify-center flex p-8'>
         <div className='container flex flex-col md:flex-row justify-center items-center max-w-2xl'>
-          <Image src="/white-living-room.jpg" className='p-4 w-128 md:w-96' alt='living room' />
+          <Image width="352" height="235" src="/white-living-room.jpg" className='p-4 w-128 md:w-96' alt='living room' />
           <p>Finding a dream home can be daunting. Having moved recently herself, she will thoroughly guide you every step of the way into your new home hassle-free.</p>
         </div>
       </div>
