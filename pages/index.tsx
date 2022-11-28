@@ -32,7 +32,7 @@ export default function IndexPage() {
               className={
                 buttonClass
               }
-              href="/list"
+              href="/selling"
             >
               List a Home
             </a>
@@ -40,7 +40,7 @@ export default function IndexPage() {
               className={
                 buttonClass
               }
-              href="/buy"
+              href="/buying"
             >
               Buy a Home
             </a>

@@ -103,6 +103,7 @@ export default function Navigation(): JSX.Element {
       </div>
       <nav className="bg-black md:flex">
         <div className="flex flex-col hidden md:flex md:flex-row items-center justify-between p-8 bg-black text-white w-full">
+          <a href="/">
           <Image
             width="112"
             height="112"
@@ -110,6 +111,7 @@ export default function Navigation(): JSX.Element {
             src="/logo.png"
             alt="Alice Wu Logo"
           />
+          </a>
           <ul className="flex flex-col md:block md:flex-row">
             {headerItems.map(
               (
