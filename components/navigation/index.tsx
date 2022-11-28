@@ -63,10 +63,35 @@ export default function Navigation(): JSX.Element {
   }
 
   const headerItems = [
-    'selling',
-    'buying',
-    'contact',
-  ]
+    { name: 'home', link: '/' },
+    { name: 'selling', link: '/selling' },
+    { name: 'buying', link: '/buying' },
+    { name: 'contact', link: '#footer' },
+  ];
+
+  const headerItemRender =
+    headerItems.map(
+      (
+        headerItem
+      ) => {
+        return (
+          <a
+            key={
+              headerItem.name
+            }
+            className={
+              navTextStyle
+            }
+            href={`${headerItem.link}`}
+          >
+            {
+              headerItem.name
+            }
+          </a>
+        )
+      }
+    )
+
 
   return (
     <>
@@ -77,28 +102,7 @@ export default function Navigation(): JSX.Element {
           styles={styles}
         >
           <ul className="flex flex-col md:flex-row">
-            {headerItems.map(
-              (
-                headerItem
-              ) => {
-                const link = headerItem === 'contact' ? '#footer' : headerItem;
-                return (
-                  <a
-                    key={
-                      headerItem
-                    }
-                    className={
-                      navTextStyle
-                    }
-                    href={`/${link}`}
-                  >
-                    {
-                      headerItem
-                    }
-                  </a>
-                )
-              }
-            )}
+            {headerItemRender}
           </ul>
         </Menu>
       </div>
@@ -114,28 +118,7 @@ export default function Navigation(): JSX.Element {
             />
           </a>
           <ul className="flex flex-col md:block md:flex-row">
-            {headerItems.map(
-              (
-                headerItem
-              ) => {
-                const link = headerItem === 'contact' ? '#footer' : headerItem;
-                return (
-                  <a
-                    key={
-                      headerItem
-                    }
-                    className={
-                      navTextStyle
-                    }
-                    href={`/${link}`}
-                  >
-                    {
-                      headerItem
-                    }
-                  </a>
-                )
-              }
-            )}
+            {headerItemRender}
           </ul>
         </div>
       </nav>

@@ -1,5 +1,5 @@
 import Consultation from '../components/consultation';
-import PageTitle from '../components/PageTitle'
+import Image from 'next/image';
 
 export default function Buying() {
   const stats = [
@@ -45,7 +45,7 @@ export default function Buying() {
   return (
     <div className="">
       <div className='flex flex-col lg:flex-row p-8 justify-between align-end text-2xl container mx-auto'>
-        <img className='max-w-md mb-4 md:mr-8 lg:mb-0' src=' /compass-concierge.png' alt='Compass Concierge' />
+        <Image className='max-w-md mb-4 md:mr-8 lg:mb-0' src=' /compass-concierge.png' alt='Compass Concierge' />
         <p className='flex items-end'>
           Get fronted for
           the cost of
@@ -117,7 +117,7 @@ export default function Buying() {
       <div className='container mx-auto flex flex-col justify-center p-8'>
         <h2 className='text-6xl mb-4 mx-auto'>How it Works</h2>
         <div className='flex flex-col md:flex-row'>
-          <img className='w-96 mr-8 mx-auto mb-8' src='/dining-room.jpg' alt='dining room' />
+          <Image className='w-96 mr-8 mx-auto mb-8' src='/dining-room.jpg' alt='dining room' />
           <div className='grid grid-cols-2 grid-rows-2 gap-4'>
             <div>
               <h4 className='text-3xl mb-2'>Step 1</h4>

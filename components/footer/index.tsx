@@ -89,9 +89,7 @@ export default function Footer(): JSX.Element {
           abides by Equal
           Housing
           Opportunity
-          laws. License
-          Number
-          01052285. All
+          laws. All
           material
           presented
           herein is
