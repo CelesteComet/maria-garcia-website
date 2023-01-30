@@ -22,7 +22,7 @@ export default function Footer(): JSX.Element {
         >
           <img
             className="w-full h-full"
-            src="/youtube.png"
+            src="https://www.youtube.com/@alicewurealtor"
             alt="youtube"
           />
         </a>
