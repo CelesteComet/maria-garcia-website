@@ -19,7 +19,7 @@ export default function Newsletter(): JSX.Element {
         More!
       </p>
       <form
-        action="https://gmail.us17.list-manage.com/subscribe/post" method="POST"
+        action="https://gmail.us17.list-manage.com/subscribe/post?u=449d52c33ea813b64ddb5f24f&amp;id=562c9df0d0&amp;f_id=00ca65e0f0" method="POST"
         className="flex flex-col lg:flex-row justify-center items-center md:items-end"
       >
         <fieldset className='flex flex-col lg:flex-row mb-4 lg:mb-0'>
@@ -30,8 +30,8 @@ export default function Newsletter(): JSX.Element {
             <input
               className="border border-black p-1 px-4 text-center rounded-md mr-4 mb-4 lg:mb-0"
               type="text"
-              name="b_name"
-              id="b_name"
+              name="FNAME"
+              id="mce-FNAME"
             />
           </div>
           <div className='flex flex-col'>
@@ -39,8 +39,8 @@ export default function Newsletter(): JSX.Element {
             <input
               className="border border-black p-1 px-4 text-center rounded-md mr-4"
               type="text"
-              name="b_email"
-              id="b_email"
+              name="EMAIL"
+              id="mce-EMAIL"
             />
           </div>
         </fieldset>
