@@ -5,12 +5,12 @@ import React from 'react'
 import Popup from '../components/popup'
 import Newsletter from '../components/Newsletter'
 
+export const buttonClass =
+'border-black border min-w-[150px] text-center text-black p-2 hover:bg-black hover:text-white transition-colors duration-300 mr-2'
+
 export default function IndexPage() {
   const paragraphClass =
     'mb-4'
-
-  const buttonClass =
-    'border-black border min-w-[150px] text-center text-black p-2 hover:bg-black hover:text-white transition-colors duration-300 mr-2'
 
   return (
     <main>
