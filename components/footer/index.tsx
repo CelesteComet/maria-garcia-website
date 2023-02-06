@@ -47,10 +47,8 @@ export default function Footer(): JSX.Element {
           {" " + process.env.email + " "}
         </div>
         <div>
-          South Bay |
           Tri-Valley |
-          East Bay |
-          Peninsula |
+          Central Valley |
           California Bay
           Area{' '}
         </div>
