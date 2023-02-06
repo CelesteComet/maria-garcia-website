@@ -114,7 +114,7 @@ export default function Navigation(): JSX.Element {
               height="112"
               className="w-28"
               src="/logo.png"
-              alt="Alice Wu Logo"
+              alt={`${process.env.name} Logo`}
             />
           </a>
           <ul className="flex flex-col md:block md:flex-row">

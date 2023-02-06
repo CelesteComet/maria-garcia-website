@@ -21,7 +21,7 @@ export default function Hero({
         }}
       >
         <a
-          className="border-white border min-w-[150px] text-center text-white p-2 hover:bg-black transition-colors duration-300"
+          className="border-white hover:border-black bg-black border min-w-[150px] text-center text-white hover:text-black p-2 hover:bg-white transition-colors duration-300"
           href={
             button.link
           }
@@ -33,7 +33,7 @@ export default function Hero({
         <div className="container columns-2 h-3/4 flex justify-center items-center">
           <div className="bg-black p-4 border-r-2 border-white flex flex-col text-white text-center justify-center h-full w-1/2">
             <h2 className="text-3xl">
-              Alice Wu
+              {process.env.name}
             </h2>
             <p>
               California

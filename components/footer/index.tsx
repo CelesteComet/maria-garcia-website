@@ -18,19 +18,19 @@ export default function Footer(): JSX.Element {
           className={
             footerSocialIconClass
           }
-          href="#"
+          href="https://www.tiktok.com/@iammariagarcia"
         >
           <img
             className="w-full h-full"
-            src="https://www.youtube.com/@alicewurealtor"
-            alt="youtube"
+            src="/tikblack.png"
+            alt="tiktok"
           />
         </a>
         <a
           className={
             footerSocialIconClass
           }
-          href="https://www.instagram.com/alicewurealtor"
+          href="https://www.instagram.com/im_mari_g/"
         >
           <img
             className="w-full h-full"
@@ -41,11 +41,10 @@ export default function Footer(): JSX.Element {
       </div>
       <div className="grid grid-cols-1 md:pt-4 container justify-center mx-auto">
         <div className="pb-4">
-          <b>Tel</b>
-          :&nbsp;(669)-265-5083&nbsp;
-          <b>Email</b>
-          :&nbsp;
-          alicewu@compass.com
+          <b>Tel:</b>
+          {" " + process.env.phoneNumber + " "}
+          <b>Email:</b>
+          {" " + process.env.email + " "}
         </div>
         <div>
           South Bay |
@@ -67,14 +66,13 @@ export default function Footer(): JSX.Element {
         <div className="pb-4">
           Compass DRE
           #01527235 | DRE
-          #02194535 |
-          Licenced as
-          Kang-Ling Wu
-          (Alice Wu)
+          #{process.env.dre + " "}|
+          Licensed as
+          {" " + process.env.name}
         </div>
         <div className="text-sm">
           Copyright ©
-          2022 Alice Wu
+          2022 {" " + process.env.name + "-Olmos "}
           Realtor.
         </div>
         <div className="text-xs">

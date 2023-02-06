@@ -110,7 +110,7 @@ export default function Popup(): JSX.Element {
           height="112"
           className="mx-auto"
           src="/logo.png"
-          alt="Alice Wu Logo"
+          alt={`${process.env.name} logo`}
         />
 
         {isThankYou && (

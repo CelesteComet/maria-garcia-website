@@ -82,7 +82,7 @@ export default function Buying() {
             (s, i) => {
               const border = i === 1 ? 'md:border-r-4 md:border-l-4' : ''
               return (
-                <div className={`flex flex-col ${border} items-center justify-center pb-4 pt-4 md:p-4 text-center`}>
+                <div key={i} className={`flex flex-col ${border} items-center justify-center pb-4 pt-4 md:p-4 text-center`}>
                   <h3 className='text-6xl mb-2 md:mb-8'>
                     {
                       s.title
@@ -122,11 +122,11 @@ export default function Buying() {
           <div className='grid grid-cols-2 grid-rows-2 gap-4'>
             <div>
               <h4 className='text-3xl mb-2'>Step 1</h4>
-              <p>Work with Alice to decide which services can increase your home's value the most and set an estimated budget for the work.</p>
+              <p>Work with Maria to decide which services can increase your home's value the most and set an estimated budget for the work.</p>
             </div>
             <div>
               <h4 className='text-3xl'>Step 2</h4>
-              <p>When you are ready to start, Alice will be by your side as you engage vendors and commission work.</p>
+              <p>When you are ready to start, Maria will be by your side as you engage vendors and commission work.</p>
             </div>
             <div>
               <h4 className='text-3xl'>Step 3</h4>

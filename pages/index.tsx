@@ -18,8 +18,8 @@ export default function IndexPage() {
       <Hero
         backgroundImage="/hero.jpg"
         button={{
-          text: 'Book a Consultation',
-          link: 'https://calendly.com/alicerealtor',
+          text: 'Book a Consultation / Reserva tu consulta',
+          link: process.env.calendly
         }}
       />
       <section className="bg-[#f4f4f4] text-black flex items-center justify-center h-48">
@@ -49,118 +49,24 @@ export default function IndexPage() {
         </div>
 
       </section>
-      <iframe src="https://www.compass.com/c/alicewu/website-collection?agent_id=6356e716144ef10001c50ede" width="100%" height="1500"></iframe>
+      <iframe src={process.env.publicCollection} width="100%" height="1500"></iframe>
       <TextWithImage
-        title="About Alice Wu"
-        image="/alice.jpg"
-        alt="Alice Wu"
+        title={`About ${process.env.name}`}
+        image="/maria.jpg"
+        alt={process.env.name}
       >
         <>
           <p
             className={
               paragraphClass
             }
-          >
-            Coming from
-            an
-            entrepreneurship
-            and marketing
-            background,
-            as well as
-            having worked
-            at multiple
-            global luxury
-            brands and
-            startups for
-            over 8 years.
-            Alice decided
-            to go all in
-            on her true
-            passion for
-            real estate.
-            Bringing in
-            her expertise
-            from past
-            endeavors,
-            she brings to
-            her clients a
-            unique and
-            personal
-            experience in
-            helping them
-            make the best
-            decision in
-            their best
-            interest.
-          </p>
-          <p
-            className={
-              paragraphClass
-            }
-          >
-            Alice loves
-            the Bay Area
-            and went to
-            school in
-            Cupertino and
-            got her
-            bachelor's at
-            UC Berkeley.
-            Though she
-            started as an
-            international
-            student from
-            Taiwan, Alice
-            and her
-            husband lived
-            across the
-            Bay Area and
-            finally
-            settled in
-            the
-            Tri-Valley.
-            In her free
-            time, she
-            enjoys
-            showing
-            friends and
-            clients alike
-            her favorite
-            food spots on
-            YouTube.
-          </p>
-          <p
-            className={
-              paragraphClass
-            }
-          >
-            She speaks
-            fluent
-            Mandarin,
-            Cantonese,
-            Taiwanese,
-            English, and
-            some
-            Japanese.
-          </p>
-          <p
-            className={
-              paragraphClass
-            }
-          >
-            Alice is a
-            member of the
-            National
-            Board of
-            Realtors, the
-            California
-            Association
-            of Realtors,
-            and the Bay
-            East
-            Association
-            of Realtors.
-          </p>
+          >Originally from Sonora, Mexico, Maria was brought to the Central Valley when she was a toddler. As a bilingual woman, this savvy realtor takes great pride in her Mexican heritage and her extensive knowledge of the Central Valley region as well.
+            </p>
+            <p className={paragraphClass}>Maria is inspired by helping her community members attain the American Dream of owning their own home. She is determined to provide her clients with first-class customer service as she guides them through the process. Clients are ensured of a clear understanding every step of the way.
+</p><p className={paragraphClass}>Ms. Garcia possesses grit and the devotion needed to assist with her client’s needs and help them to realize their dreams and successfully attain them. She is consistently up for a challenge and the art of negotiation helps flex her homebuying or selling muscles. Maria enjoys working with like-minded clients who share the same respectful values in each transaction. 
+</p><p className={paragraphClass}>Her charisma and loyalty are the two characteristics attributing to her success. Ms. Garcia is humbled that her business is mostly referral-based, and that her passion for helping others is what has turned a considerable number of clients into long-term friends. 
+</p><p className={paragraphClass}>Clients describe Maria as friendly, unassuming, patient and a delight to work with. </p><p className={paragraphClass}>In what spare time Maria might have, she enjoys good food and being surrounded by family and friends.</p>
+
         </>
 
       </TextWithImage>
