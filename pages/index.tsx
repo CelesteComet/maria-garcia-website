@@ -13,7 +13,7 @@ export default function IndexPage() {
     'mb-4'
 
   return (
-    <main>
+    <main className='top-28 relative md:top-0'>
       {/* <Popup /> */}
       <Hero
         backgroundImage="/hero.jpg"

@@ -17,10 +17,10 @@ export default function Navigation(): JSX.Element {
     },
     bmBurgerBars: {
       background:
-        'black',
+        'white',
       height: '2px',
       border:
-        '2px solid black',
+        '2px solid white',
     },
     bmBurgerBarsHover: {
       background:
@@ -96,6 +96,16 @@ export default function Navigation(): JSX.Element {
   return (
     <>
       <div className="md:hidden">
+        <div className="md:hidden bg-black fixed w-full z-10">
+            <a href="/">
+              <Image
+                width="112"
+                height="112"
+                className="w-28"
+                src="/logo.png"
+                alt={`${process.env.name} Logo`}
+              />
+            </a>            
         <Menu
           className="md:hidden mb-8"
           right
@@ -105,6 +115,7 @@ export default function Navigation(): JSX.Element {
             {headerItemRender}
           </ul>
         </Menu>
+        </div>
       </div>
       <nav className="bg-transparent md:flex">
         <div className="flex flex-col hidden md:flex md:flex-row items-center justify-between p-8 bg-black text-white w-full">
