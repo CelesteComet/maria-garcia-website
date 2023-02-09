@@ -37,7 +37,7 @@ export default function Hero({
             </h2>
             <p>
               California
-              Bay Area
+              Tri-Valley
               Realtor
             </p>
           </div>

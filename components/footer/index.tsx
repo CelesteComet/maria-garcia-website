@@ -18,7 +18,7 @@ export default function Footer(): JSX.Element {
           className={
             footerSocialIconClass
           }
-          href="https://www.tiktok.com/@iammariagarcia"
+          href="https://www.tiktok.com/@realestate_with_mari_g"
         >
           <img
             className="w-full h-full"
